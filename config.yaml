@@ -1,0 +1,31 @@
+log:
+  level: warn
+runner:
+  file: .runner
+  capacity: 1
+  env_file: .env
+  timeout: 3h
+  shutdown_timeout: 0s
+  insecure: false
+  fetch_timeout: 5s
+  fetch_interval: 2s
+  github_mirror: ''
+  labels:
+    - "ubuntu-latest:docker://docker.gitea.com/runner-images:ubuntu-latest"
+    - "ubuntu-22.04:docker://docker.gitea.com/runner-images:ubuntu-22.04"
+    - "ubuntu-20.04:docker://docker.gitea.com/runner-images:ubuntu-20.04"
+cache:
+  enabled: false
+container:
+  network: ""
+  privileged: false
+  options:
+  workdir_parent:
+  valid_volumes: []
+  docker_host: ""
+  force_pull: true
+  force_rebuild: false
+  require_docker: false
+  docker_timeout: 0s
+host:
+  workdir_parent: /
