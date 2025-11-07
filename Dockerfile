@@ -4,11 +4,9 @@ WORKDIR /runner
 
 COPY * .
 
-RUN docker pull gitea:act_runner:0.2.13 && \
-    mkdir data && \
-    chmod +x entrypoint.sh
+RUN mkdir data && \
+    chmod +x start.sh
 
-EXPOSE 2376
+EXPOSE 2375
 
-CMD [""]
-ENTRYPOINT ["/runner/entrypoint.sh"]
+CMD ["sh","/runner/start.sh"]
