@@ -4,9 +4,9 @@ services:
     image: gitea/act_runner:0.2.13
     environment:
       CONFIG_FILE: /config.yaml
-      GITEA_INSTANCE_URL: "--gitea-url--"
-      GITEA_RUNNER_REGISTRATION_TOKEN: "--runner-token--"
-      GITEA_RUNNER_NAME: "--runner-name--"
+      GITEA_INSTANCE_URL: "--gitea--"
+      GITEA_RUNNER_REGISTRATION_TOKEN: "--token--"
+      GITEA_RUNNER_NAME: "--rname--"
     volumes:
       - ./config.yaml:/config.yaml
       - ./data:/data

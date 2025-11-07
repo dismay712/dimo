@@ -1,0 +1,5 @@
+*
+
+!config.yaml
+!docker-compose.yml
+!entrypoint.sh

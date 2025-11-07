@@ -11,9 +11,8 @@ runner:
   fetch_interval: 2s
   github_mirror: ''
   labels:
-    - "ubuntu-latest:docker://docker.gitea.com/runner-images:ubuntu-latest"
-    - "ubuntu-22.04:docker://docker.gitea.com/runner-images:ubuntu-22.04"
-    - "ubuntu-20.04:docker://docker.gitea.com/runner-images:ubuntu-20.04"
+    - "ubuntu-latest:docker://ubuntu:latest"
+    - "alpine-latest:docker://alpine:latest"
 cache:
   enabled: false
 container:
