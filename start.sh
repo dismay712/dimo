@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-docker pull gitea:act_runner:0.2.13
+docker pull docker.io/gitea/act_runner:0.2.13
 
 cd /runner
 
