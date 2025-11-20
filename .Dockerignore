@@ -2,5 +2,5 @@
 
 !config.yaml
 !docker-compose.yml
-!entrypoint.sh
+!start.sh
 !tinyhttp

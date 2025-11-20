@@ -4,9 +4,10 @@ WORKDIR /runner
 
 COPY * .
 
-RUN mkdir data && \
+RUN apk add --no-cache curl screen && \
+    mkdir data && \
     chmod +x start.sh
 
-EXPOSE 2375
+EXPOSE 8080
 
-CMD ["sh","/runner/start.sh"]
+ENTRYPOINT ["/runner/start.sh"]
