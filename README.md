@@ -2,7 +2,7 @@
 
 Gitea Actions Runner running-on PaaS suppeorted `--privileged`
 
-> USE docker:dind 
+> USE docker:dind  
 > USE komari-agent
 
 ### Running on **Local**
