@@ -4,8 +4,10 @@ WORKDIR /runner
 
 COPY * .
 
-RUN apk add --no-cache curl screen && \
-    mkdir data && \
+RUN apk add --no-cache curl openrc supervisor && \
+    apk cache clean && \
+    mkdir data && mkdir -p /run/openrc && \
+    touch /run/openrc/softlevel && \
     chmod +x start.sh
 
 EXPOSE 8080
