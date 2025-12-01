@@ -1,5 +1,5 @@
 *
-!app.ini
+!apps.ini
 !config.yaml
 !docker-compose.yml
 !start.sh
